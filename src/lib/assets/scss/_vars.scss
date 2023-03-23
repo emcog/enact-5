@@ -1,0 +1,55 @@
+// Breakpoints
+//Thanks https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/
+
+$for-phone-only: 599px;
+$for-tablet-portrait-up: 600px;
+$for-tablet-landscape-up: 900px;
+$for-desktop-up: 1200px;
+$for-big-desktop-up: 1800px;
+
+
+
+$smMin: 48rem;
+$smMax: 63.9375rem;
+$mdMin: 64rem;
+$mdMax: 79.9375rem;
+$lgMin: 80rem;
+$lgMax: 89.9375rem;
+$xlMin: 90rem;
+$xlMax: 104.9375rem;
+$xxlMin: 105rem;
+$xxlMax: 122.4375rem;
+$xxxlMin: 122.5rem;
+
+
+
+//sizes major third
+//thanks https://type-scale.com/
+$xs9: 0.107rem;
+$xs8: 0.134rem;
+$xs7: 0.168rem;
+$xs6: 0.21rem;
+$xs5: 0.262rem;
+$xs4: 0.328rem;
+$xs3: 0.41rem;
+$xs2: .512rem;
+$xs: .64rem;
+$sm: 0.8rem;
+$base: 1rem;
+$lg: 1.25rem;
+$xl: 1.563rem;
+$xxl: 1.953rem;
+$xl2: 2.441rem;
+$xl3: 3.052rem;
+$xl4: 3.815rem;
+$xl5: 4.768rem;
+$xl6: 5.96rem;
+$xl7: 7.451rem;
+$xl8: 9.313rem;
+$xl9: 11.642rem;
+
+
+
+
+
+

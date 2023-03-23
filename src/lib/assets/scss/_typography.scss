@@ -1,0 +1,37 @@
+@use './vars';
+
+:where(h1, h2, h3, h4, h5, h6, a) {
+  margin: 0;
+  line-height: 1.1;
+  font-family: var(--brand-sans);
+  font-weight: 500;
+  color: var(--brand-black);
+}
+
+
+a {
+  color: var(--brand-black);
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--dark);
+
+  span, p, li {
+    font-family: var(--brand-sans);
+  }
+}
+
+li {
+  font-weight: 500;
+}
+
+//ul {
+  //list-style-type: square;
+  //padding-left: 1.5rem;
+
+  //ul {
+  //  list-style-type: circle;
+  //}
+
+  //::marker {
+  //  color: var(--accent);
+  //}
+//}

@@ -1,0 +1,61 @@
+@use './vars';
+
+header {
+  nav ul {
+    //gap: 0 vars.$xl;
+  }
+}
+
+header,
+footer {
+  font-family: var(--brand-sans);
+  //padding: 2.5rem 2rem;
+  
+  a {
+    text-decoration: none;
+
+    &.active {
+      background: var(--bright-green);
+    }
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    //justify-content: center;
+
+    padding: 0;
+    margin: 0;
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  svg {
+    fill: currentColor;
+  }
+}
+
+
+
+.skip-to-content-link {
+  position: absolute;
+  top: -6rem;
+  left: 0;
+  padding: .5em;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background: var(--darker);
+  color: var(--background);
+
+  &:focus {
+    transform: translateY(6rem);
+    opacity: 1;
+    z-index: 11;
+  }
+}

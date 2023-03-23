@@ -1,0 +1,24 @@
+  @use './vars';
+
+  .content-wrapper { grid-column: 4/-4; }
+
+  .primary-12-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: 0;
+    grid-column-gap: vars.$base;
+    grid-template-rows: auto;
+    grid-column: 1/-1;
+    grid-row: 3/-2;
+    margin: vars.$base vars.$xs 0 vars.$xs;
+    width: auto;
+
+    @media(min-width: vars.$for-desktop-up) {
+      margin: vars.$base vars.$xl5 vars.$lg vars.$xl;
+    }
+
+    @media (min-width: vars.$for-tablet-landscape-up) {
+      grid-row: 2/-1;
+      margin: vars.$base vars.$xl vars.$lg vars.$xl;
+    }
+  }

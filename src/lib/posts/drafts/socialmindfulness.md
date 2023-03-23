@@ -1,0 +1,22 @@
+---
+title: "Social Mindfulness"
+date: "2021-10-26"
+updated: "2021-11-01"
+categories:
+- "print"
+- "useability"
+coverImage: "/media/jefferson-santos-fCEJGBzAkrU-unsplash.jpg"
+coverWidth: 16
+coverHeight: 9
+excerpt: Grid design and font selection for useability 
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam eget felis eget nunc lobortis mattis aliquam. Ut diam quam nulla porttitor massa id. Eros donec ac odio tempor orci dapibus ultrices in. Hac habitasse platea dictumst quisque. Volutpat sed cras ornare arcu dui. Parturient montes nascetur ridiculus mus. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Aliquam ut porttitor leo a diam sollicitudin tempor id. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Arcu non sodales neque sodales ut. In ante metus dictum at tempor commodo ullamcorper a lacus. Sed nisi lacus sed viverra tellus in hac habitasse platea. Quis viverra nibh cras pulvinar mattis nunc sed blandit libero. Dictumst vestibulum rhoncus est pellentesque elit.
+
+Adipiscing commodo elit at imperdiet dui accumsan sit amet nulla. Tempor nec feugiat nisl pretium fusce id velit ut tortor. In pellentesque massa placerat duis ultricies lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Nibh tortor id aliquet lectus proin nibh nisl. Accumsan lacus vel facilisis volutpat est velit. Risus feugiat in ante metus dictum at tempor commodo. Arcu ac tortor dignissim convallis aenean et tortor. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Viverra orci sagittis eu volutpat odio. Sagittis aliquam malesuada bibendum arcu. Rhoncus urna neque viverra justo nec ultrices dui sapien eget. Neque gravida in fermentum et sollicitudin ac orci phasellus. Risus in hendrerit gravida rutrum. Odio facilisis mauris sit amet massa vitae tortor. Tellus at urna condimentum mattis pellentesque id nibh tortor id. Nisl pretium fusce id velit ut tortor pretium viverra. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel. Eros in cursus turpis massa.
+
+Consequat nisl vel pretium lectus quam id. Ut pharetra sit amet aliquam id diam maecenas. Integer quis auctor elit sed vulputate mi sit. Adipiscing diam donec adipiscing tristique risus. Amet nisl suscipit adipiscing bibendum est ultricies. Amet aliquam id diam maecenas ultricies mi eget. Sapien faucibus et molestie ac feugiat sed lectus. Amet tellus cras adipiscing enim eu turpis egestas pretium. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Proin fermentum leo vel orci porta non pulvinar. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo.
+
+Est ante in nibh mauris cursus mattis molestie. Varius duis at consectetur lorem donec massa sapien faucibus et. Sagittis nisl rhoncus mattis rhoncus. Lobortis scelerisque fermentum dui faucibus. Leo vel orci porta non pulvinar neque laoreet. Amet nulla facilisi morbi tempus iaculis urna id volutpat lacus. Viverra tellus in hac habitasse. Nam aliquam sem et tortor consequat id porta. Ac tortor vitae purus faucibus ornare suspendisse. Quis varius quam quisque id diam. Ultricies mi eget mauris pharetra et. Fermentum dui faucibus in ornare quam viverra orci. Praesent semper feugiat nibh sed. In iaculis nunc sed augue. Amet luctus venenatis lectus magna fringilla urna. Egestas pretium aenean pharetra magna ac. Justo nec ultrices dui sapien eget. At tellus at urna condimentum mattis pellentesque id nibh tortor. Lobortis scelerisque fermentum dui faucibus in ornare quam.
+
+Adipiscing enim eu turpis egestas pretium aenean pharetra magna. Aenean pharetra magna ac placerat. Cras sed felis eget velit aliquet sagittis id. Eget egestas purus viverra accumsan. Sed viverra tellus in hac habitasse platea dictumst. Placerat duis ultricies lacus sed turpis. Nulla porttitor massa id neque. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Feugiat nibh sed pulvinar proin gravida hendrerit. Quis hendrerit dolor magna eget est lorem ipsum dolor. Enim tortor at auctor urna nunc id cursus. Cras ornare arcu dui vivamus arcu felis.

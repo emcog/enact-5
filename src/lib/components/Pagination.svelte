@@ -4,7 +4,7 @@
   export let currentPage
   export let totalPosts
   //todo make a variable not hardcoded
-  export let path = '/work/page'
+  export let path = '/blog/page'
   
   let pagesAvailable
   $: pagesAvailable = Math.ceil(totalPosts / postsPerPage)

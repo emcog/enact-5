@@ -10,7 +10,7 @@
 						 categories;
 	console.log(categories, 'categories')
 </script>
-<a href="/work/{slug}">
+<a href="/blog/{slug}">
 	<article class="card">
 	<div class="card__copy">
 		<h2>{title}</h2>

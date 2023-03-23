@@ -18,7 +18,7 @@
 				<a href="/work">all</a>
 			{#each categories as category}
 					<li class="{ category.title === cat ? 'active' : '' } category">
-						<a href="/work/category/{category.title}">
+						<a href="/blog/category/{category.title}">
 							{category.title}
 						</a>
 					</li>

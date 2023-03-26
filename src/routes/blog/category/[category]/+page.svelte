@@ -3,6 +3,7 @@
 	import PostsList from '$lib/components/PostsList.svelte'
 	import Pagination from '$lib/components/Pagination.svelte'
   import { postsPerPage } from '$lib/config'
+	import SecondaryNav from '$lib/components/SecondaryNav.svelte';
 
 	export let data
 
@@ -18,7 +19,9 @@
 </svelte:head>
 
 
-<h1>Blog category: {category}</h1>
+<h1>category/[cat]/page.svelte Blog category: {category}</h1>
+
+<SecondaryNav categories={data.categories} activeCategory="{data.category}"/>
 
 {#if posts.length}
 	<PostsList posts={posts} />

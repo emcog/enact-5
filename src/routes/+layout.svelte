@@ -1,6 +1,7 @@
 <!-- This is the global layout file; it "wraps" every page on the site. (Or more accurately: is the parent component to every page component on the site.) -->
 <script>
 	import '$lib/assets/scss/global.scss'
+	import '/src/app.css'
 	import Header from '$lib/components/Header.svelte'
 	import Footer from '$lib/components/Footer.svelte'
 	import { currentPage, isMenuOpen } from '$lib/assets/js/store'
@@ -44,6 +45,7 @@
 	<Header />
 	{#key data.path}
 		<main
+			class="primary-12-grid"
 			id="main"
 			tabindex="-1"
 			in:fade={transitionIn}

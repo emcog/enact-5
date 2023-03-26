@@ -4,6 +4,7 @@
 
 	export let categories = []
 
+		//highlight active category
 		let url = "";
 		currentPage.subscribe(value => {url = value;});
 		let cat = url.slice(15).replaceAll("%20", " ");
@@ -15,7 +16,7 @@
 	<ul>
 		<li class="secondary-nav__categories">
 			<li class="{ cat === '' ? 'active' : '' } category">
-				<a href="/work">all</a>
+				<a href="/blog">all</a>
 			{#each categories as category}
 					<li class="{ category.title === cat ? 'active' : '' } category">
 						<a href="/blog/category/{category.title}">

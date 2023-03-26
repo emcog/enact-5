@@ -7,7 +7,7 @@
 
 	export let data
 
-  const { page, posts, category, total } = data
+  const { page, posts, category, sortedUniqueCategories, total } = data
 
 	$: lowerBound = (page * postsPerPage) - (postsPerPage - 1) || 1
 	$: upperBound = Math.min(page * postsPerPage, total)
@@ -21,7 +21,7 @@
 
 <h1>category/[cat]/page.svelte Blog category: {category}</h1>
 
-<SecondaryNav categories={data.categories} activeCategory="{data.category}"/>
+<SecondaryNav categories={sortedUniqueCategories} activeCategory="{category}"/>
 
 {#if posts.length}
 	<PostsList posts={posts} />

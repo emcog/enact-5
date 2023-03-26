@@ -5,7 +5,7 @@
 	import { siteDescription, postsPerPage } from '$lib/config'
 
 	export let data
-	const { page, category, totalPosts, posts } = data 
+	const { page, category, totalPosts, posts } = data
 
 	$: lowerBound = (page * postsPerPage) - (postsPerPage - 1) || 1
 	$: upperBound = Math.min(page * postsPerPage, totalPosts)

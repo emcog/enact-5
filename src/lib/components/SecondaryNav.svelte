@@ -15,15 +15,16 @@
 	<h2>Categories</h2>
 	<ul>
 		<li class="secondary-nav__categories">
-			<li class="{ cat === '' ? 'active' : '' } category">
-				<a href="/blog">all</a>
-			{#each categories as category}
-					<li class="{ category.title === cat ? 'active' : '' } category">
-						<a href="/blog/category/{category.title}">
-							{category.title}
-						</a>
-					</li>
-			{/each}
+			<ul>
+				<li class="{ cat === '' ? 'active' : '' } category">
+					<a href="/blog">all</a>
+				</li>
+				{#each categories as category}
+				<li class="{ category.title === cat ? 'active' : '' } category">
+					<a href="/blog/category/{category.title}">{category.title}</a>
+				</li>
+				{/each}
+			</ul>
 		</li>
 	</ul>
 </nav>

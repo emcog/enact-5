@@ -3,7 +3,7 @@
   import Card from './Card.svelte';
 </script>
 
-<ul class="posts-list">
+<ul class="posts-list" id='content'>
   {#each posts as post}
 
     <li class="posts-list__post">
@@ -22,22 +22,6 @@
 
 <style lang="scss">
 
-.posts-list {
-  grid-column: 1/-1;
-  grid-row: 3/-1;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  grid-template-columns: repeat(12, 1fr);
-  list-style-type: none;
-  padding: 0;
-
-  @media(min-width: vars.$for-tablet-portrait-up) {
-    grid-column: 5/-1;
-    grid-row: 1/-1;
-  }
-  @media(min-width: vars.$for-tablet-landscape-up) { grid-column: 4/-1; }
-}
 
 li {
     grid-column: 1/-1;

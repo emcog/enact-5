@@ -1,6 +1,5 @@
 <script>
 	import { currentPage } from '$lib/assets/js/store';
-	import { onMount } from 'svelte';
 
 	export let categories = []
 

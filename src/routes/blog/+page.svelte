@@ -13,9 +13,9 @@
 	<meta data-key="description" name="description" content={siteDescription}>
 </svelte:head>
 
-<h1>Blog</h1>
+<h1>Case studies</h1>
 
-<SecondaryNav categories={data.categories}/>
+<!--<SecondaryNav categories={data.categories}/>-->
 
 <PostsList posts={data.posts} />
 

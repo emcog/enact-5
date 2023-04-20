@@ -12,7 +12,7 @@ excerpt: Custom word documents to bring inter and intra comms on brand
 ---
 
 <script>
-import PicsForMd from "../components/PicsForMd.svelte"
+import PicsForMd from "../../components/PicsForMd.svelte"
 </script>
 <PicsForMd hasBorder={true} images={[
 { name: "word__zebra-1.jpg", alt:"Custom word template" },

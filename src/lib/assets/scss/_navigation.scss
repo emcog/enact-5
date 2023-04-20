@@ -27,7 +27,7 @@ nav.secondary-nav, aside.secondary-nav {
 .category.active { background: var(--bright-green); }
 
 .secondary-nav {
-  grid-column: 1/-1;
+  grid-column: 1/4;
   grid-row: 1/2;
   z-index: 1;
 

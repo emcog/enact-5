@@ -13,8 +13,8 @@ excerpt: A selection of work for print
 ---
 
 <script>
-    import PicForMd from '../components/PicForMd.svelte';
-    import PicsForMd from '../components/PicsForMd.svelte';
+    import PicForMd from '../../components/PicForMd.svelte';
+    import PicsForMd from '../../components/PicsForMd.svelte';
 </script>
 
 

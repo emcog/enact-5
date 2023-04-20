@@ -17,7 +17,7 @@
 </svelte:head>
 
 <!--todo update below-->
-<h1>category/+page.svelte</h1>
+<!--<h1>category/+page.svelte</h1>-->
 <!--<SecondaryNav categories={data.categories}/>-->
 <PostsList posts={data.posts} />
 <Pagination currentPage={1} totalPosts={data.total} />

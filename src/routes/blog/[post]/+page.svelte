@@ -33,18 +33,16 @@ const { PostContent } = data
 
 
 <article class="post">
+	<h1>{ title }</h1>
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
 	<img
 		class="cover-image"
 		src="{coverImage}"
 		alt=""
 		style="aspect-ratio: {coverWidth} / {coverHeight};"
-		width={coverWidth}
-		height={coverHeight}
 	/>
 
-	<h1>{ title }</h1>
-	
+
 	<div class="meta">
 		<b>Published:</b> {date}
 		<br>
@@ -54,7 +52,7 @@ const { PostContent } = data
 	<svelte:component this={PostContent} />
 
 	{#if categories}
-		<aside class="post-footer">
+		<aside class="secondary-nav">
 			<h2>Posted in: </h2>
 			<ul>
 				{#each categories as category}
@@ -67,4 +65,15 @@ const { PostContent } = data
 			</ul>
 		</aside>
 	{/if}
-</article> 
+</article>
+
+<style lang='scss'>
+	article.post {
+		grid-column: 4/12;
+	}
+
+	.cover-image {
+		width: 100%;
+		height: auto;
+	}
+</style>

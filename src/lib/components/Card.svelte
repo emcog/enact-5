@@ -42,11 +42,11 @@
 		transition: all .25s;
 		display: flex;
 		flex-direction: column-reverse;
-		//margin: vars.$xs vars.$xs 0  vars.$xs;
-	 	border-top: 3px solid var(--bright-green);
 		max-width: 100%;
-		 color: var(--brand-black);
-		 background: var(--mid-grey);
+		color: var(--brand-black);
+
+
+		&:hover {background: var(--bright-green);}
 
 
 
@@ -62,7 +62,7 @@
 			//margin: 0 vars.$xl5 vars.$xs2 vars.$xl5;
 		}
 
-    	&:hover{ background: var(--soft-green); }
+    	//&:hover{ background: var(--soft-green); }
 
 
     img {
@@ -88,11 +88,12 @@
     margin: 0;
     padding: 0 vars.$base vars.$base 0;
 
-		@media (min-width: vars.$for-tablet-landscape-up) { padding: vars.$lg 0 0 0; }
+		@media (min-width: vars.$for-tablet-landscape-up) {
+			//padding: vars.$lg 0 0 0;
+		}
 
 
 		h2 {
-      margin-top: vars.$xs4;
       font-size: vars.$xl;
 			font-weight: bold;
 

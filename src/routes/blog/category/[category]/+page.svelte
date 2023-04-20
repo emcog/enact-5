@@ -18,8 +18,7 @@
 	<title>Category: {category}</title>
 </svelte:head>
 
-
-<h1>category/[cat]/page.svelte Blog category: {category}</h1>
+<!--<h1>category/[cat]/page.svelte Blog category: {category}</h1>-->
 
 <SecondaryNav categories={sortedUniqueCategories} activeCategory="{category}"/>
 

@@ -1,42 +1,41 @@
 <script>
 
 	export let card = {
-		slug: "",
 		title: "",
 		summary: "",
-		image: {
-			nda: false,
-			link: "",
-			alt: "",
-			width: "",
-			height: ""
-		},
+		coverImage: "",
+		alt: "",
+		coverWidth: "",
+		coverHeight: "",
+		nda: false,
 		categories: []
 	}
 
 
 
 	 let {
-		 slug,
 		 coverImage,
 		 alt,
 		 coverWidth,
 		 coverHeight,
+		 nda,
 		 title,
 		 excerpt,
 		 categories
 	 } = card
 </script>
 
-<a href="/blog/{slug}">
-	<article class="card">
+
+	<section class="card">
 	<div class="card__copy">
 		<h2>{title}</h2>
 		<p>{excerpt}</p>
 		<div class="categories">
+			{#if categories}
 			{#each categories as category}
 				<span>{category}, </span>
 			{/each}
+				{/if}
 		</div>
 	</div>
 		{#if coverImage}
@@ -48,15 +47,15 @@
 				height={coverHeight}
 				style="ratio: {coverWidth} / {coverHeight}"
 			/>
-			{:else }
+			{:else if nda }
 			<div class="nda"><span>NDA</span></div>
 			{/if}
-</article>
-</a>
+</section>
+
 
 <style lang="scss">
 
-	article {
+	section {
 		transition: all .25s;
 		display: flex;
 		flex-direction: column-reverse;

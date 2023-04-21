@@ -2,16 +2,31 @@
 	import Card from '$lib/components/Card.svelte';
 	let services = [
 		{
-			name: "PowerPoint, Word and Excel",
-			summary: "Custom designs and fully functional templates"
-		}
+			title: "PowerPoint, Word and Excel",
+      excerpt: "Custom designs and fully functional templates",
+      link: "service/office",
+      image: {
+        nda: false
+      },
+      }
+
 	]
 </script>
 
-{#each services as service}
- <Card/>
-{/each}
+<h1>Practical branding</h1>
 
+ <ul>
+  {#each services as service}
+   <li>
+    <a href="{service.link}">
+     <Card card="{service}"/>
+    </a>
+   </li>
+  {/each}
+ </ul>
 
-
-<style lang="scss"></style>
+<style lang="scss">
+  a {
+    text-decoration: none;
+  }
+</style>

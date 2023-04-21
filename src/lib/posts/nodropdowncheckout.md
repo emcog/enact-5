@@ -7,7 +7,6 @@ categories:
 - "ui"
 - "useability"
 coverImage: "/media/nodd-form--1.png"
- 
 coverWidth: 16
 coverHeight: 9
 excerpt: Using linguistics and cognitive psychology to design for profitablity, trust and useability with a no-dropdown checkout form.

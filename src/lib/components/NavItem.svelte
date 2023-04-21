@@ -37,13 +37,13 @@
     padding: var(--xs4) var(--xs2);
 
     &:hover {
-      background: #00E596;
+      border-bottom: var(--brand-black) solid 3px;
       text-decoration: none;
     }
 
-    & .active {
-      border-top: solid 2px var(--bright-green);
-    }
+    & .active { border-bottom: var(--brand-black) solid 3px; }
+
+
 
   }
 </style>

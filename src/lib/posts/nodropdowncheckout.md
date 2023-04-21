@@ -18,7 +18,6 @@ excerpt: Using linguistics and cognitive psychology to design for profitablity, 
     import PicsForMd from '../components/PicsForMd.svelte';
 </script>
 
-<PicForMd image={ {name: "nodd-form--1.png", alt: "'Lets fill in a form', No one ever"} }/>
 
 This project is an exploration of two ideas: increasing profit by making a form as simple as possible and 
 

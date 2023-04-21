@@ -21,6 +21,7 @@ article.post {
     font-weight: 500;
   }
 
+
   @media (min-width: vars.$for-tablet-portrait-up) {
     h2, h3, h4, h5, h6, p, span, section, div, pre, ul, ol {
       grid-column: 2/-2;
@@ -29,7 +30,7 @@ article.post {
 
 
     p {
-      font-size: vars.$lg;
+      font-size: vars.$base;
       margin: 0 0 vars.$xl 0;
     }
   }

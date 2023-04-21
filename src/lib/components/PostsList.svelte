@@ -7,15 +7,7 @@
   {#each posts as post}
 
     <li class="posts-list__post">
-      <Card slug="{post.slug}"
-            coverImage="{post.coverImage}"
-            alt="{post.alt}"
-            coverWidth="{post.coverWidth}"
-            coverHeight="{post.coverHeight}"
-            title="{post.title}"
-            excerpt="{post.excerpt}"
-            categories="{post.categories}"
-      />
+      <Card card="{post}" />
     </li>
   {/each}
 </ul>

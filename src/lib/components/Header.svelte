@@ -15,29 +15,22 @@
   <a on:click|preventDefault={focusMain} class="skip-to-content-link" href="#main">
     Skip to main content
   </a>
-  
-  <a href="/" class="site-title">{siteTitle}</a>
-  
-<!--  <HamburgerMenuButton />-->
-  <MainNav class="main-nav" />
-<!--  <SecondaryNav/>-->
+
+  <div id="logo-nav-wrapper">
+    <a href="/" class="site-title">{siteTitle}</a>
+    <!--  <HamburgerMenuButton />-->
+    <MainNav class="main-nav" />
+    <!--  <SecondaryNav/>-->
+  </div>
 
 </header>
 
 <style lang="scss">
 
   header {
-
-    margin: vars.$base vars.$xs 0 vars.$xs;
     display: flex;
     grid-column: 1/-1;
-    //border-bottom: solid 1px var(--brand-mid-grey);
-
-
-    @media(min-width: vars.$for-tablet-landscape-up ) { margin: vars.$base vars.$xl vars.$lg vars.$xl; }
-
-    @media(min-width: vars.$for-desktop-up) { margin: vars.$base vars.$xl5 vars.$lg vars.$xl; }
-
+    border-bottom: solid 1px var(--brand-xlight-grey);
 
 
     .site-title {
@@ -54,10 +47,6 @@
       }
     }
 
-    .main-nav{
-      margin-left: auto;
-    }
-
     .menu-button {
       margin: 0;
       background: transparent !important;
@@ -70,7 +59,23 @@
         display: none;
       }
     }
-
-
   }
+
+  #logo-nav-wrapper {
+    margin: vars.$base vars.$xs 0 vars.$xs;
+    @media(min-width: vars.$for-tablet-landscape-up ) { margin: vars.$base vars.$xl vars.$lg vars.$xl; }
+    @media(min-width: vars.$for-desktop-up) { margin: vars.$base vars.$xl5 vars.$lg vars.$xl; }
+
+    display: flex;
+    width: 100%;
+  }
+
+  .main-nav{
+    margin-left: auto;
+  }
+
+
+
+
+
 </style>

@@ -1,15 +1,33 @@
 <script>
-//todo fix card
-	export let slug,
-						 coverImage,
-						 alt,
-						 coverWidth,
-						 coverHeight,
-						 title,
-						 excerpt,
-						 categories;
-	console.log(categories, 'categories')
+
+	export let card = {
+		slug: "",
+		title: "",
+		summary: "",
+		image: {
+			nda: false,
+			link: "",
+			alt: "",
+			width: "",
+			height: ""
+		},
+		categories: []
+	}
+
+
+
+	 let {
+		 slug,
+		 coverImage,
+		 alt,
+		 coverWidth,
+		 coverHeight,
+		 title,
+		 excerpt,
+		 categories
+	 } = card
 </script>
+
 <a href="/blog/{slug}">
 	<article class="card">
 	<div class="card__copy">

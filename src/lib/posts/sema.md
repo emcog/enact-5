@@ -17,13 +17,8 @@ excerpt: "How I bridged a culture gap to make space for user-centred design"
 import VidForMd from '../components/VidForMd.svelte';
 import PicsForMd from '../components/PicsForMd.svelte';
 </script>
-{excerpt}
 
-<PicsForMd images={[
-{name: "sema__ui.png", alt: "Screen shot of Sema, a UI for programming music"}, 
-{name: "sema__roli.jpg", alt: "roli seaboard, next generation midi keyboard"}
-]} caption={"Left: Sema, a UI for programming music in the Neumorphic style. Right: The Roli Seaboard family, next generation midi controllers"}
-/>
+
 
 ## Summary
 ### Situation

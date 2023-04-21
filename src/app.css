@@ -4,6 +4,8 @@
     --brand-dark-green: #002E1E;
     --brand-deep-purple: #24042E;
     --brand-black: #0B0D0C;
+
+    --brand-xlight-grey:#DEDEDE;
     --brand-light-grey:#BABABA;
     --brand-mid-grey:#878787;
     --brand-dark-grey:#404040;
@@ -40,9 +42,9 @@
 }
 
 
-a:hover {
-    background: var(--bright-green);
-    text-decoration: none;
-}
+/*a:hover {*/
+    /*background: var(--bright-green);*/
+    /*text-decoration: none;*/
+/*}*/
 
 a {color: var(--brand-black)}

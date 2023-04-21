@@ -9,9 +9,7 @@ categories:
 - "persona"
 - "human centred design"
 coverImage: "/media/reimagine-cover.png"
-coverWidth: 16
-coverHeight: 9
-excerpt: How a persona lead to a pivot in concept and won team buy-in.
+excerpt: How empathising with the user led to a change of creative direction and ensured team buy-in. 
 ---
 
 <script>
@@ -19,14 +17,7 @@ excerpt: How a persona lead to a pivot in concept and won team buy-in.
     import PicsForMd from '../components/PicsForMd.svelte';
 </script>
 
-## A creative's interpretation of creativity
-
-<PicsForMd images={[
-{name: "reimagine-data__1.jpg", alt: ""},
-{name: "reimagine-data__2.jpg", alt: ""},
-{name: "reimagine-data__3.jpg", alt: ""}
-]} caption={""}
-/>
+#Summary
 
 This project was concept development for a brand at a large financial business. They wanted to 
 communicate that their skill and expertise with data could help a business find new opportunities for

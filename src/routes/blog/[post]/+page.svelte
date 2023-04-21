@@ -33,21 +33,24 @@ const { PostContent } = data
 
 
 <article class="post">
-	<h1>{ title }</h1>
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
+
+	<h1>{ title }</h1>
+
+	<p id="excerpt">{excerpt}</p>
+
 	<img
 		class="cover-image"
 		src="{coverImage}"
 		alt=""
-		style="aspect-ratio: {coverWidth} / {coverHeight};"
 	/>
 
 
-	<div class="meta">
-		<b>Published:</b> {date}
-		<br>
-		<b>Updated:</b> {updated}
-	</div>
+<!--	<div class="meta">-->
+<!--		<b>Published:</b> {date}-->
+<!--		<br>-->
+<!--		<b>Updated:</b> {updated}-->
+<!--	</div>-->
 
 	<svelte:component this={PostContent} />
 
@@ -69,11 +72,29 @@ const { PostContent } = data
 
 <style lang='scss'>
 	article.post {
-		grid-column: 4/12;
+		grid-column: 4/10;
+
+		h1 {
+			font-weight: 600;
+			font-size: var(--xl4)
+		}
+
+
+
+
+	}
+
+
+
+
+	#excerpt {
+		margin: var(--xs2) 0 0 0;
+		font-size: var(--base);
 	}
 
 	.cover-image {
 		width: 100%;
 		height: auto;
+		margin: var(--base) 0;
 	}
 </style>

@@ -27,22 +27,22 @@
 
 
 	<section class="card">
-	<div class="card__copy">
-		<h2>{title}</h2>
-		<p>{excerpt}</p>
-		<div class="categories">
+		<div class="card__copy">
+			<h2>{title}</h2>
+			<p>{excerpt}</p>
 			{#if categories}
-			{#each categories as category}
-				<span>{category}, </span>
-			{/each}
-				{/if}
+				<div class="categories">
+					{#each categories as category}
+						<span>{category}, </span>
+					{/each}
+				</div>
+			{/if}
 		</div>
-	</div>
 		{#if coverImage}
-		<img
+
+			<img
 			src={coverImage}
 			alt="{alt}"
-
 				width={coverWidth}
 				height={coverHeight}
 				style="ratio: {coverWidth} / {coverHeight}"
@@ -55,7 +55,8 @@
 
 <style lang="scss">
 
-	section {
+	.card {
+
 		transition: all .25s;
 		display: flex;
 		flex-direction: column-reverse;
@@ -68,9 +69,8 @@
 
 
      @media (min-width: vars.$for-tablet-landscape-up) {
+       flex-direction: row;
        grid-column: 1/-1;
-			 display: grid;
-			 grid-template-columns: repeat(12, 1fr);
 			 grid-gap: 8px;
        //margin: 0 vars.$xl vars.$xs2 vars.$xl2 ;
      }
@@ -83,15 +83,16 @@
 
 
     img {
-			 grid-column: 3/-1;
-			 //height: 100%;
+			align-self: end;
+			float: right;
+		 grid-column: 3/-1;
       height: auto;
 			 width: 100%;
 			 object-fit: cover;
        margin-bottom: 0;
        padding-bottom: 0;
        @media (min-width: vars.$for-tablet-landscape-up) {
-         grid-column: 7/-1;
+         width: 50%;
        }
      }
    }
@@ -101,7 +102,8 @@
   a:hover { text-decoration: none;}
 
 	.card__copy {
-		grid-column: 1/7;
+    align-self: start;
+		//grid-column: 1/7;
     margin: 0;
     padding: 0 vars.$base vars.$base 0;
 

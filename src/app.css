@@ -5,6 +5,7 @@
     --brand-deep-purple: #24042E;
     --brand-black: #0B0D0C;
 
+    --brand-xxlight-grey:#EEE;
     --brand-xlight-grey:#DEDEDE;
     --brand-light-grey:#BABABA;
     --brand-mid-grey:#878787;
@@ -38,6 +39,17 @@
     --codeFont: 'Fira Code', monospace;
 
     line-height: var(--xl);
+
+    --brand-shadow: 0 0 0.8rem #eee;
+    --brand-shadow-green: 0 8px 4px -4px #00E596;
+
+    --brand-grad-green: linear-gradient(180deg, #00E596 0%, #13A973 100%);
+    --brand-grad-pink:  linear-gradient(180deg, #F9337A 0%, #DC1BA6 100%);
+    --brand-border: solid 1px #eeeeee;
+
+    --brand-grad-btn: radial-gradient(179.38% 661.95% at 50% 50%, #F9337A 0%, #DC1BA6 100%);
+
+
 
 }
 

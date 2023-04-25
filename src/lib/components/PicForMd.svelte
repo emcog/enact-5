@@ -1,4 +1,4 @@
-<script>
+x<script>
 	export let caption;
 	export let image = {};
 	export let hasBorder = false;

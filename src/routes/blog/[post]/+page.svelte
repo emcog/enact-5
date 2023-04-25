@@ -1,5 +1,7 @@
 <!-- This file renders each individual blog post for reading. Be sure to update the svelte:head below -->
 <script>
+	import SecondaryNav from '$lib/components/SecondaryNav.svelte';
+
 export let data
 
 const {
@@ -13,6 +15,8 @@ const {
 	categories 
 } = data.meta
 const { PostContent } = data
+
+	console.log('categories', data)
 </script>
 
 
@@ -32,7 +36,7 @@ const { PostContent } = data
 </svelte:head>
 
 
-<article class="post">
+<article class="content-wrapper">
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
 
 	<h1>{ title }</h1>
@@ -46,46 +50,14 @@ const { PostContent } = data
 	/>
 
 
-<!--	<div class="meta">-->
-<!--		<b>Published:</b> {date}-->
-<!--		<br>-->
-<!--		<b>Updated:</b> {updated}-->
-<!--	</div>-->
-
 	<svelte:component this={PostContent} />
 
-	{#if categories}
-		<aside class="secondary-nav">
-			<h2>Posted in: </h2>
-			<ul>
-				{#each categories as category}
-					<li>
-						<a href="/blog/category/{category}/">
-							{ category }
-						</a>
-					</li>
-				{/each}
-			</ul>
-		</aside>
-	{/if}
+
 </article>
+<SecondaryNav categories={categories}/>
+
 
 <style lang='scss'>
-	article.post {
-		grid-column: 4/10;
-
-		h1 {
-			font-weight: 600;
-			font-size: var(--xl4)
-		}
-
-
-
-
-	}
-
-
-
 
 	#excerpt {
 		margin: var(--xs2) 0 0 0;

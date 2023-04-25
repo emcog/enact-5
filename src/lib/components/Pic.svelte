@@ -1,9 +1,10 @@
 <script>
 	export let picture = {
-		media: [
+		source: [
 			{
-				source: "",
-				srcset: ""
+				media: "",
+				srcset: "",
+				type: ""
 			}
 		],
 		img: {
@@ -19,9 +20,11 @@
 </script>
 
 <picture>
-	{#if picture.media}
-		{#each picture.media as media }
-			<source media="{ media.source }" srcset="{ media.srcset }">
+	{#if picture.source}
+		{#each picture.source as source }
+			<source media="{ source.media }"
+							srcset="{ source.srcset }"
+							type="{source.type}">
 		{/each}
 	{/if}
 	<img

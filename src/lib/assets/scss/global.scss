@@ -12,8 +12,9 @@
 @use './vars';
 
 *:focus {
-  outline: 3px solid var(--brand-dark-green);
-  outline-offset: -3px;
+  outline: 2px solid #00114D;
+  border-radius: 3px;
+  outline-offset: -2px;
 }
 
 main:focus {
@@ -33,6 +34,10 @@ body {
 
 
  //todo return below styling to component (picsforMD)
+
+.for-md {
+  width: 100%;
+}
 
 .post figure.for-md {
   display: grid;

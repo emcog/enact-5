@@ -20,7 +20,7 @@
 
 <!--<h1>category/[cat]/page.svelte Blog category: {category}</h1>-->
 
-<SecondaryNav categories={sortedUniqueCategories} activeCategory="{category}"/>
+<!--<SecondaryNav categories={sortedUniqueCategories} activeCategory="{category}"/>-->
 
 {#if posts.length}
 	<PostsList posts={posts} />

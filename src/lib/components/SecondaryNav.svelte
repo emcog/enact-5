@@ -3,39 +3,43 @@
 
 	export let categories = []
 
-		//highlight active category
-		let url = "";
-		currentPage.subscribe(value => {url = value;});
-		let cat = url.slice(15).replaceAll("%20", " ");
+	//highlight active category
+	let url = "";
+	currentPage.subscribe(value => {url = value;});
+	let cat = url.slice(15).replaceAll("%20", " ");
 
 </script>
 
 <nav class="secondary-nav">
-	<h2>Categories</h2>
-	<ul>
-		<li class="secondary-nav__categories">
+<!--	<ul>-->
+<!--		<li class="secondary-nav__categories">-->
+			{#if !categories[0].title}<h2>Posted in</h2>{:else}<h2>Categories</h2>{/if}
 			<ul>
-				<li class="{ cat === '' ? 'active' : '' } category">
-					<a href="/blog">all</a>
-				</li>
+				<!--{#if categories[0].title}-->
+					<li class="{ cat === '' ? 'active' : '' } category">
+						<a href="/blog">all</a>
+					</li>
+				<!--{/if}-->
+
 				{#each categories as category}
-				<li class="{ category.title === cat ? 'active' : '' } category">
-					<a href="/blog/category/{category.title}">{category.title}</a>
-				</li>
+					{#if category.title }
+						<li class="{ category.title === cat ? 'active' : '' } category">
+							<a href="/blog/category/{category.title}">{category.title}</a>
+						</li>
+					{:else}
+						<li class="{ category.title === cat ? 'active' : '' } category">
+							<a href="/blog/category/{category}">{category}</a>
+						</li>
+					{/if}
 				{/each}
 			</ul>
-		</li>
-	</ul>
+<!--		</li>-->
+<!--	</ul>-->
 </nav>
 
 
 
 <style lang="scss">
-	.secondary-nav {
-    border-top: 3px solid var(--bright-green);
-	}
-
-	.category.active { background: var(--bright-green)}
 
 	h2 {
 		text-transform: uppercase;

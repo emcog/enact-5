@@ -1,5 +1,5 @@
 ---
-title: "Programming software for musicians"
+title: "Instrumental code"
 date: "2022-08-30"
 updated: ""
 categories:
@@ -8,15 +8,30 @@ categories:
 - "dx"
 - "ui"
 - "ux"
-coverImage: "/media/sema__ui.png"
-coverWidth: 16
-coverHeight: 9
-excerpt: "How I bridged a culture gap to make space for user-centred design"
+coverImage: /media/16x9-ui-sema-dashboard-700w@2x.png
+excerpt: Better design by bridging information gaps within the team
+
+illustrationIconBar:
+ media: 
+  - {media: "min-width: 500px", type: image/webp, srcset: /media/sema/sema-design-illus__icon-bar-600w.webp 1x, /media/sema/sema-design-illus__icon-bar-600w@2x.webp 2x, /media/sema/sema-design-illus__icon-bar-600w@3x.webp 3x}
+  - { media: "max-width: 499px", type: image/webp, srcset: /media/sema/sema-design-illus__icon-bar-350.webp 1x, /media/sema/sema-design-illus__icon-bar-350@2x.webp 2x, /media/sema/sema-design-illus__icon-bar-350@3x.webp 3x }
+  
+ img:
+  srcset: /media/sema/sema-design-illus__icon-bar-600w.png 600w /media/sema/sema-design-illus__icon-bar-600w@2x.png 1200w /media/sema/sema-design-illus__icon-bar-600w@3x.png 1800w
+  src: "/media/sema/sema-design-illus__icon-bar-600w.png"
+  alt: "Design illustration"
+  caption: "Improving focus by collapsing the tool and nav bars"
+
+  
 ---
 <script>
 import VidForMd from '../components/VidForMd.svelte';
 import PicsForMd from '../components/PicsForMd.svelte';
+import Pic from '../components/Pic.svelte';
 </script>
+
+
+
 
 
 
@@ -68,11 +83,7 @@ once they are programming they don't need to do this. So, the site wide navigati
 likewise with the session setting (volume, save, download etc ).
 
 
-<PicsForMd images={[
-{name: "sema__collapse--ill.png", alt: "Design illustration"}
-]} caption={"Design illustration"}
-/>
-
+<Pic picture={illustrationIconBar}/>
 
 #### Appropriate levels of detail
 

@@ -26,9 +26,9 @@
 </script>
 
 
-	<section class="card">
+	<div class="card">
 		<div class="card__copy">
-			<h2>{title}</h2>
+			<h2 class='card__title'>{title}</h2>
 			<p>{excerpt}</p>
 			{#if categories}
 				<div class="categories">
@@ -50,21 +50,33 @@
 			{:else if nda }
 			<div class="nda"><span>NDA</span></div>
 			{/if}
-</section>
+</div>
 
 
 <style lang="scss">
 
-	.card {
 
+	.card {
+		border-radius: 3px;
+    box-shadow: var(--brand-shadow);
 		transition: all .25s;
 		display: flex;
 		flex-direction: column-reverse;
 		max-width: 100%;
 		color: var(--brand-black);
+		border: var(--brand-border);
+		//background-color: var(--brand-xxlight-grey);
 
 
-		&:hover {background: var(--bright-green);}
+		&:hover {
+			background: var(--brand-grad-pink);
+		}
+
+    &:hover h2 {
+      text-decoration: underline;
+      text-underline-position: under;
+      text-underline: var(--brand-black);
+    }
 
 
 
@@ -76,23 +88,25 @@
      }
 
 		@media (min-width: vars.$for-desktop-up) {
-			//margin: 0 vars.$xl5 vars.$xs2 vars.$xl5;
 		}
 
-    	//&:hover{ background: var(--soft-green); }
+
 
 
     img {
 			align-self: end;
 			float: right;
-		 grid-column: 3/-1;
+		 	grid-column: 3/-1;
       height: auto;
-			 width: 100%;
-			 object-fit: cover;
-       margin-bottom: 0;
-       padding-bottom: 0;
+		 	//width: 100%;
+			object-fit: fill;
+			margin-bottom: 0;
+			padding-bottom: 0;
+
        @media (min-width: vars.$for-tablet-landscape-up) {
-         width: 50%;
+         width: 66%;
+				 border-top-right-radius: 3px ;
+				 border-bottom-right-radius: 3px ;
        }
      }
    }
@@ -102,10 +116,9 @@
   a:hover { text-decoration: none;}
 
 	.card__copy {
+		margin: vars.$xs;
     align-self: start;
-		//grid-column: 1/7;
-    margin: 0;
-    padding: 0 vars.$base vars.$base 0;
+    //padding: vars.$lg vars.$base vars.$base vars.$base;
 
 		@media (min-width: vars.$for-tablet-landscape-up) {
 			//padding: vars.$lg 0 0 0;
@@ -115,19 +128,20 @@
 		h2 {
       font-size: vars.$xl;
 			font-weight: bold;
+			line-height: 1.3em;
 
 
-      @media (min-width: vars.$for-desktop-up) { font-size: vars.$xl2; } }
+      @media (min-width: vars.$for-desktop-up) { font-size: vars.$xl3; } }
 
 
 		p {
-			font-size: vars.$base;
+			font-size: var(--sm);
 			line-height: 1.2;
 			font-family: var(--bodyCopy);
 
       @media (min-width: vars.$for-desktop-up) {
-				font-size: vars.$lg;
-				line-height: 1.2;
+				font-size: var(--base);
+				line-height: 1.6em;
 				margin-top: vars.$xl; } }
 
 
@@ -150,8 +164,15 @@
 		}
 	}
 
-	.categories { margin: 0 vars.$sm vars.$sm 0}
-	.categories > span { line-height: 1.4 }
+	.categories {
+
+    margin: auto vars.$sm vars.$sm 0;
+
+    & span {
+      line-height: 1.4;
+      font-size: var(--sm);
+    }
+  }
 
 
 </style>

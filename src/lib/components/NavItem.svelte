@@ -29,20 +29,20 @@
 <style lang="scss">
 
 
-  li {
-    margin: 0 0 0 var(--base)
-  }
+  li {margin: 0 0 0 var(--base)}
 
   a {
-    padding: var(--xs4) var(--xs2);
+    padding: vars.$sm vars.$sm var(--base) vars.$sm;
+    //padding: vars.$base;
+    margin: 0 ;
 
     &:hover {
-      border-bottom: var(--brand-black) solid 3px;
+      color: var(--brand-black);
+      //border-bottom: var(--brand-mid-grey) solid 2px;
       text-decoration: none;
     }
 
-    & .active { border-bottom: var(--brand-black) solid 3px; }
-
+    & .active { /* see _header-and-footer*/}
 
 
   }

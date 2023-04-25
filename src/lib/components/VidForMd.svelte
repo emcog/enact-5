@@ -29,9 +29,9 @@
   //  @media (min-width: vars.$for-tablet-portrait-up) { grid-column: 2/-1; }
 	//}
 	//
-	//video {width: 100%}
-	//
-	//
+	video {width: 100%}
+
+
 
 
 </style>

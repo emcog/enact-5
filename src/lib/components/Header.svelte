@@ -28,23 +28,29 @@
 <style lang="scss">
 
   header {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, .8);
     display: flex;
     grid-column: 1/-1;
-    border-bottom: solid 1px var(--brand-xlight-grey);
+    //box-shadow: var(--brand-shadow);
+
+
+    a {
+      text-decoration: none;
+      &.active { box-shadow: var(--brand-shadow-green); }
+    }
 
 
     .site-title {
       font-family: var(--brand-sans);
-      font-size: vars.$xl2;
+      //font-size: vars.$xl2;
       color: inherit;
       margin: 0;
       font-size: 1.4rem;
       font-weight: bold;
 
-      @media (min-width: vars.$smMin) {
-        //width: 100%;
-        font-size: 1.6rem;
-      }
+      @media (min-width: vars.$smMin) {font-size: 1.6rem;}
     }
 
     .menu-button {
@@ -69,6 +75,7 @@
     display: flex;
     width: 100%;
   }
+
 
   .main-nav{
     margin-left: auto;

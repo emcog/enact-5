@@ -8,7 +8,7 @@
 </svelte:head>
 
 
-<div class="content-wrapper">
+<div class="centred">
   <h1>Contact</h1>
     <form name="contact" method="POST" data-netlify="true">
       <section>
@@ -42,6 +42,10 @@ section {
   #message { height: var(--xl9)}
 
   button {float: right;}
+
+.centred {
+  grid-column: 4/10;
+}
 
 
 

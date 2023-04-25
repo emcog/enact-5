@@ -36,7 +36,7 @@ const { PostContent } = data
 </svelte:head>
 
 
-<article class="content-wrapper">
+<article class="post">
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
 
 	<h1>{ title }</h1>
@@ -49,11 +49,10 @@ const { PostContent } = data
 		alt=""
 	/>
 
-
 	<svelte:component this={PostContent} />
 
-
 </article>
+
 <SecondaryNav categories={categories}/>
 
 

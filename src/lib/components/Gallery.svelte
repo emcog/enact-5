@@ -3,9 +3,6 @@
 	import works from '$lib/content/gallery.json'
 </script>
 
-<!--todo add sketches-->
-<!--todo add ui drawings-->
-
 
 <section aria-label="gallery" id="gallery">
 	{#each works.works as work }
@@ -18,7 +15,6 @@
 </section>
 <style>
 
-    /*todo import or refactor breakpoints from #content */
     #gallery {
         grid-column: 3/-1;
         width: 100%;

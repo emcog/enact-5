@@ -20,7 +20,7 @@
 </script>
 
 <picture>
-	{#if picture.source}
+	{#if picture.source }
 		{#each picture.source as source }
 			<source media="{ source.media }"
 							srcset="{ source.srcset }"
@@ -36,16 +36,12 @@
 
 <style lang="scss">
 
-	.pic-wrapper {
-
-	}
 
   picture {
     display: block;
 		margin: auto;
     max-width: var(--max-width, auto);
 		object-fit: var(--object-fit, contain);
-		aspect-ratio: 1;
 		background: var(--color, --brand-mid-grey);
   }
 
@@ -53,7 +49,6 @@
     margin: auto;
 		max-width: var(--max-width, auto);
 		object-fit: contain;
-		aspect-ratio: 1;
 	}
 
 

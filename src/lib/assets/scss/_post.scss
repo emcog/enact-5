@@ -3,6 +3,7 @@
 article.post {
   grid-column: 1/-1;
   margin: 0 ;
+  max-width: 600px;
 
   h1 + p {
     margin: 0 0 vars.$xs2 0;
@@ -21,47 +22,31 @@ article.post {
     font-weight: 500;
   }
 
+  h1 {
+    font-size: var(--xl3);
+    @media (min-width: vars.$for-tablet-portrait-up) {font-size: var(--xl3);}
+  }
+
+  img, picture {
+    object-fit: cover;
+    width: 350px;
+    @media (min-width: vars.$for-tablet-portrait-up) {width: 600px;}
+  }
+
+
+
 
   @media (min-width: vars.$for-tablet-portrait-up) {
-    h2, h3, h4, h5, h6, p, span, section, div, pre, ul, ol {
-      grid-column: 2/-2;
-      margin: vars.$xs4 0 vars.$base 0;
-    }
+    margin: var(--xl) auto;
+    grid-column: 3/-1;
 
-
-    p {
-      font-size: vars.$base;
-      margin: 0 0 vars.$xl 0;
-    }
+    img + h1 {margin-top: var(--xs)}
   }
+
 
   @media (min-width: vars.$for-tablet-landscape-up) {
-    h2, h3, h4, h5, h6, p, span, section, div, pre, ul, ol {
-      //grid-column: 3/-3;
-    }
+    grid-column: 1/-1;
+      h1 {font-size: vars.$xl3;}
     margin: 0 auto;
   }
-
-  .meta {
-    font-size: 0.8rem;
-    margin-bottom: 4rem;
-  }
-
-  h1 {
-    grid-column: 1/1;
-    align-self: end;
-    font-size: vars.$xl2;
-    @media(min-width: vars.$for-tablet-portrait-up) {
-      //grid-column: 2/-2
-    }
-    @media(min-width: vars.$for-tablet-landscape-up) {
-      //grid-column: 3/-2;
-      //font-size: vars.$xl3;
-    }
-  }
-
-  img + h1 {
-    margin-top: 1rem;
-  }
-
 }

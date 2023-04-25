@@ -11,15 +11,13 @@
 </script>
 
 <nav class="secondary-nav">
-<!--	<ul>-->
-<!--		<li class="secondary-nav__categories">-->
 			{#if !categories[0].title}<h2>Posted in</h2>{:else}<h2>Categories</h2>{/if}
 			<ul>
-				<!--{#if categories[0].title}-->
+				{#if categories[0].title}
 					<li class="{ cat === '' ? 'active' : '' } category">
 						<a href="/blog">all</a>
 					</li>
-				<!--{/if}-->
+				{/if}
 
 				{#each categories as category}
 					{#if category.title }

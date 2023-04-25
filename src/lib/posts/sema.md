@@ -22,6 +22,17 @@ illustrationIconBar:
   alt: "Design illustration"
   caption: "Improving focus by collapsing the tool and nav bars"
 
+
+illustrationWidgetEverything:
+ media:
+  - {media: "min-width: 500px", type: image/webp, srcset: /media/sema/sema-design-illus__widget-everything-600w.webp 1x, /media/sema/sema-design-illus__widget-everything-600w@2x.webp 2x, /media/sema/sema-design-illus__widget-everything-600w@3x.webp 3x }
+  - { media: "max-width: 499px", type: image/webp, srcset: /media/sema/sema-design-illus__widget-everything-350.webp 1x, /media/sema/sema-design-illus__widget-everything-350@2x.webp 2x, /media/sema/sema-design-illus__widget-everything-350@3x.webp 3x }
+ img:
+  srcset: /media/sema/sema-design-illus__widget-everything-600w.png 600w /media/sema/sema-design-illus__widget-everything-600w@2x.png 1200w /media/sema/sema-design-illus__widget-everything-600w@3x.png 1800w
+  src: "/media/sema/sema-design-illus__widget-everything-600w.png"
+  alt: "Design illustration"
+  caption: "Unifying the design language"
+
   
 ---
 <script>
@@ -38,8 +49,7 @@ import Pic from '../components/Pic.svelte';
 ## Summary
 ### Situation
 
-A team at Sussex University are building a web-app for programming music, "Live coding". I was brought into help
-revamp its UI and interaction patterns. 
+I joined a team of Post-docs at Sussex University to help build a web-app for musical coding, Live coding". revamp its UI and interaction patterns. 
 
 
 ### Process
@@ -85,6 +95,8 @@ likewise with the session setting (volume, save, download etc ).
 
 <Pic picture={illustrationIconBar}/>
 
+
+
 #### Appropriate levels of detail
 
 We followed the principle of Jakobs law (a user will spend more time on apps other than this) and adopted 
@@ -121,9 +133,4 @@ docs within their workspace.
 Finally, this simple concept became the foundation for a design system. It is a simple metaphor anyone involved in 
 the project could hook on to work to.
 
-<PicsForMd images={[
-{name: "sema__widget-everything--ill.png", alt: "Design illustration"},
-{name: "sema__hover.png", alt: "Design drawing"},
-{name: "sema__widgets.png", alt: "Components for a design system"},
-]} caption={"Left: The expanded workspace, everything inside is a widget. Right: Stripping the widget meataphor back to its simplest forms"}
-/>
+<Pic picture={illustrationWidgetEverything}/>

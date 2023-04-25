@@ -10,7 +10,10 @@
     grid-column: 1/-1;
     grid-row: 3/-2;
     margin: vars.$base vars.$xs 0 vars.$xs;
+
+    @media(min-width: vars.$for-tablet-portrait-up) {
     width: auto;
+      }
 
     @media(min-width: vars.$for-desktop-up) {
       margin: vars.$base vars.$xl5 vars.$lg vars.$xl;

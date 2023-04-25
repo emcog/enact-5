@@ -62,10 +62,10 @@
 		transition: all .25s;
 		display: flex;
 		flex-direction: column-reverse;
-		max-width: 100%;
+		max-width: 350px;
 		color: var(--brand-black);
 		border: var(--brand-border);
-		//background-color: var(--brand-xxlight-grey);
+
 
 
 		&:hover {
@@ -82,22 +82,20 @@
 
      @media (min-width: vars.$for-tablet-landscape-up) {
        flex-direction: row;
-       grid-column: 1/-1;
+       //grid-column: 1/-1;
 			 grid-gap: 8px;
-       //margin: 0 vars.$xl vars.$xs2 vars.$xl2 ;
+       max-width: 100%;
      }
 
 		@media (min-width: vars.$for-desktop-up) {
 		}
-
-
-
 
     img {
 			align-self: end;
 			float: right;
 		 	grid-column: 3/-1;
       height: auto;
+			width: 350px;
 		 	//width: 100%;
 			object-fit: fill;
 			margin-bottom: 0;

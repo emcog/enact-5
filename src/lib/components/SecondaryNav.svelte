@@ -31,8 +31,6 @@
 					{/if}
 				{/each}
 			</ul>
-<!--		</li>-->
-<!--	</ul>-->
 </nav>
 
 
@@ -43,6 +41,14 @@
 		text-transform: uppercase;
     font-size: var(--base);
     margin: var(--xs2) 0;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		max-width: 350px;
+    @media(min-width: vars.$for-tablet-landscape-up) { flex-direction: column}
 	}
 
 </style>

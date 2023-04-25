@@ -43,12 +43,12 @@
     margin: var(--xs2) 0;
 	}
 
-	ul {
+	.secondary-nav ul {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		max-width: 350px;
-    @media(min-width: vars.$for-tablet-landscape-up) { flex-direction: column}
+    @media(min-width: vars.$for-tablet-portrait-up) { flex-direction: column}
 	}
 
 </style>

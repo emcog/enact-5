@@ -62,11 +62,9 @@
 		transition: all .25s;
 		display: flex;
 		flex-direction: column-reverse;
-		max-width: 350px;
+		width: 100%;
 		color: var(--brand-black);
 		border: var(--brand-border);
-
-
 
 		&:hover {
 			background: var(--brand-grad-pink);
@@ -80,14 +78,14 @@
 
 
 
-     @media (min-width: vars.$for-tablet-landscape-up) {
-       flex-direction: row;
-       //grid-column: 1/-1;
+     @media (min-width: vars.$for-tablet-portrait-up) {
+       flex-direction: column-reverse;
 			 grid-gap: 8px;
        max-width: 100%;
      }
 
-		@media (min-width: vars.$for-desktop-up) {
+		@media (min-width: vars.$for-tablet-landscape-up) {
+      flex-direction: row;
 		}
 
     img {
@@ -95,11 +93,14 @@
 			float: right;
 		 	grid-column: 3/-1;
       height: auto;
-			width: 350px;
-		 	//width: 100%;
+			width: 100%;
 			object-fit: fill;
 			margin-bottom: 0;
 			padding-bottom: 0;
+
+      @media (min-width: vars.$for-tablet-portrait-up) {
+				width: 100%;
+      }
 
        @media (min-width: vars.$for-tablet-landscape-up) {
          width: 66%;
